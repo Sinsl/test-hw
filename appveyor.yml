@@ -7,8 +7,7 @@ branches:
     - master
     - main
 
-cache: 
-  none
+cache: off
 
 install:
   - npm install
@@ -16,9 +15,10 @@ install:
 build: off
 
 build_script:
-  - npm run lint
-  - npm run e2e
-  - npm run build
+  - npm run build 
+
+test_script:
+  - npm run lint && npm run e2e 
 
 deploy_script:
   - git config --global credential.helper store
