@@ -17,7 +17,7 @@ build: off
 build_script:
   - npm run build 
 
-lint_script:
+test_script:
   - npm run lint
 
 test_script:
